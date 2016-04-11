@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func buscarLibro(isbn: String?) {
  //       NSLog("buscarLibro")
         if isbn != nil {
-            let isbnUrl = "https://wwwopenlibrary.org/api/books?jscmd=data&format=json&bibkeys=\(isbn!)"    //ISBN:978-84-376-0494-7
+            let isbnUrl = "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=\(isbn!)"    //ISBN:978-84-376-0494-7
             let url = NSURL(string: isbnUrl)
             let session = NSURLSession.sharedSession()
             let bloque = { (datos: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
